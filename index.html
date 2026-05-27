@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DPVA Ecosystem Intel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:    #0b1220;
+    --paper:  #f5f1e8;
+    --paper-2:#ede6d3;
+    --rule:   #1a2438;
+    --accent: #b22234;     /* DPVA red */
+    --accent-2:#1d3557;    /* deep navy */
+    --muted:  #6b6557;
+    --gold:   #c89b3c;
+    --ok:     #2e7d4f;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Fraunces', Georgia, serif;
+    font-feature-settings: "ss01", "ss02";
+    line-height: 1.55;
+    min-height: 100vh;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(11,18,32,0.04) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  /* ---- Header ------------------------------------------------------- */
+  header {
+    border-bottom: 3px double var(--rule);
+    padding: 2.5rem 2rem 1.5rem;
+    background: var(--paper);
+    position: relative;
+  }
+  header::before {
+    content: ""; position: absolute; inset: 0 0 auto 0;
+    height: 4px; background: var(--accent);
+  }
+  .masthead {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 1rem;
+  }
+  .masthead h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    margin: 0; letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .masthead h1 em {
+    font-style: italic; font-weight: 400; color: var(--accent);
+  }
+  .dateline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.15em; color: var(--muted);
+  }
+  .tagline {
+    font-style: italic; color: var(--muted);
+    margin-top: 0.5rem; font-size: 1.05rem;
+    max-width: 1400px; margin-left: auto; margin-right: auto;
+  }
+
+  /* ---- Layout ------------------------------------------------------- */
+  main {
+    max-width: 1400px; margin: 0 auto; padding: 2rem;
+    display: grid; gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 980px) {
+    main { grid-template-columns: 280px 1fr; }
+  }
+
+  /* ---- Sidebar (categories) ----------------------------------------- */
+  aside {
+    border: 1px solid var(--rule);
+    background: var(--paper-2);
+    padding: 1.25rem;
+    height: fit-content;
+    position: sticky; top: 1rem;
+  }
+  aside h3 {
+    margin: 0 0 0.75rem; font-size: 0.7rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+    border-bottom: 1px solid var(--rule); padding-bottom: 0.5rem;
+  }
+  .cat-link {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0.5rem 0.25rem; cursor: pointer;
+    border-bottom: 1px dotted #c9c0a8;
+    transition: background 0.15s;
+  }
+  .cat-link:hover { background: rgba(178,34,52,0.08); }
+  .cat-link.active {
+    background: var(--ink); color: var(--paper);
+    padding-left: 0.75rem; margin-left: -0.5rem; margin-right: -0.5rem;
+  }
+  .cat-link .count {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;
+    background: var(--rule); color: var(--paper);
+    padding: 0.1rem 0.45rem; border-radius: 2px;
+  }
+  .cat-link.active .count { background: var(--accent); }
+
+  /* ---- Story grid --------------------------------------------------- */
+  .stories { display: grid; gap: 1.5rem; }
+  article.story {
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    padding: 1.5rem 1.75rem;
+    position: relative;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  article.story:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+  .score-stamp {
+    position: absolute; top: -1px; right: -1px;
+    background: var(--accent); color: var(--paper);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; font-weight: 700;
+    padding: 0.35rem 0.7rem; letter-spacing: 0.05em;
+  }
+  .score-stamp.legal { background: var(--gold); color: var(--ink); }
+  .score-stamp.ai    { background: var(--accent-2); }
+  .score-stamp.funding { background: var(--ok); }
+
+  .story h2 {
+    font-size: 1.4rem; line-height: 1.25; margin: 0.25rem 0 0.75rem;
+    padding-right: 4rem;
+  }
+  .story h2 a { color: var(--ink); text-decoration: none; }
+  .story h2 a:hover { color: var(--accent); text-decoration: underline; }
+  .meta {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+    color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .meta .source { color: var(--accent); font-weight: 700; }
+  .summary { color: #2a2418; font-size: 0.95rem; }
+
+  .analysis {
+    border-left: 3px solid var(--accent);
+    background: rgba(178,34,52,0.04);
+    padding: 0.75rem 1rem; margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  .analysis .label {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+    text-transform: uppercase; color: var(--accent);
+    letter-spacing: 0.1em; font-weight: 700;
+  }
+
+  .chips {
+    display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.75rem;
+  }
+  .chip {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+    background: var(--ink); color: var(--paper);
+    padding: 0.15rem 0.5rem; border-radius: 2px;
+  }
+  .chip.entity { background: var(--accent-2); }
+  .chip.tag    { background: var(--rule); }
+
+  /* ---- Sort toggle ------------------------------------------------- */
+  .sort-toggle {
+    display: flex; gap: 0;
+    margin-top: 0.5rem;
+    border: 1px solid var(--rule);
+    width: fit-content;
+  }
+  .sort-toggle button {
+    background: transparent; border: none;
+    padding: 0.35rem 0.75rem; cursor: pointer;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted);
+    border-right: 1px solid var(--rule);
+    transition: background 0.1s, color 0.1s;
+  }
+  .sort-toggle button:last-child { border-right: none; }
+  .sort-toggle button:hover { background: rgba(178,34,52,0.08); color: var(--ink); }
+  .sort-toggle button.active {
+    background: var(--ink); color: var(--paper);
+  }
+
+  /* ---- Result footer (when items are truncated) -------------------- */
+  .result-footer {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    padding: 1rem;
+    border-top: 1px dashed var(--rule);
+    border-bottom: 1px dashed var(--rule);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+  }
+  .result-footer .show-toggle {
+    display: inline-block;
+    margin-top: 0.75rem;
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+    padding: 0.6rem 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+  .result-footer .show-toggle:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 0 var(--accent);
+  }
+
+  /* ---- Empty / loading --------------------------------------------- */
+  .placeholder {
+    text-align: center; padding: 4rem 2rem;
+    font-style: italic; color: var(--muted);
+    border: 2px dashed var(--rule);
+  }
+  .placeholder code {
+    font-family: 'JetBrains Mono', monospace; font-style: normal;
+    background: var(--paper-2); padding: 0.2rem 0.4rem;
+  }
+
+  footer {
+    border-top: 3px double var(--rule);
+    padding: 1.5rem 2rem; text-align: center;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+    color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;
+    margin-top: 3rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="masthead">
+    <h1>The Daily <em>Ecosystem</em></h1>
+    <div class="dateline">
+      <div id="dateline-date">— · — · —</div>
+      <div id="dateline-stats">Loading…</div>
+      <div class="sort-toggle" id="sort-toggle">
+        <button data-sort="relevance">Relevance</button>
+        <button data-sort="newest">Newest</button>
+        <button data-sort="oldest">Oldest</button>
+      </div>
+    </div>
+  </div>
+  <p class="tagline">An intelligence digest for the Democratic Party of Virginia data team —
+    tracking vendors, AI, regulation, and capital flows across the progressive tech ecosystem.</p>
+  <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--muted); margin: 0.5rem 0 0; letter-spacing: 0.15em;">
+    BUILD v4 — SHOW ALL TOGGLE
+  </p>
+</header>
+
+<main>
+  <aside>
+    <h3>Sections</h3>
+    <div id="categories"></div>
+    <h3 style="margin-top: 1.5rem;">Watched Cases</h3>
+    <div style="font-size: 0.8rem; color: var(--muted);">
+      <strong style="color: var(--ink);">NRSC v. FEC</strong><br>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">No. 24-621</span><br>
+      Decision expected by end of June 2026
+    </div>
+  </aside>
+
+  <section>
+    <div id="stories" class="stories">
+      <div class="placeholder">
+        Awaiting first daily run.<br><br>
+        Once <code>dem_tech_intel_collector.py</code> writes <code>data/digest_latest.json</code>,
+        stories will appear here.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Democratic Party of Virginia · Data &amp; Technology · vadems.org
+</footer>
+
+<script>
+const PALETTES = { legal: "legal", ai_political: "ai", funding: "funding" };
+const INITIAL_RENDER_LIMIT = 30;
+let currentCategory = "all";
+let currentSort = "relevance";
+let showAll = false;   // false = show top 30; true = show everything
+let DIGEST = null;
+
+function sortItems(items, mode) {
+  // Always return a new array — never mutate the digest's lists, or
+  // switching sort modes would scramble the source data.
+  const sorted = [...items];
+  if (mode === "newest") {
+    sorted.sort((a, b) => new Date(b.published) - new Date(a.published));
+  } else if (mode === "oldest") {
+    sorted.sort((a, b) => new Date(a.published) - new Date(b.published));
+  }
+  // "relevance" mode: leave as-is. The collector already sorts by
+  // (-score, published) when building the digest, so the order it
+  // arrives in IS the relevance order.
+  return sorted;
+}
+
+// Decode HTML entities that come through RSS summaries (e.g. &nbsp; &amp;).
+// Uses a textarea to leverage the browser's native entity decoding — handles
+// numeric (&#8217;), named (&nbsp;), and hex (&#x27;) entities consistently.
+function decodeEntities(s) {
+  if (!s) return "";
+  const ta = document.createElement("textarea");
+  ta.innerHTML = String(s);
+  return ta.value;
+}
+
+async function load() {
+  // Try both path locations so the same file works whether served from
+  // C:\InfoGather (local preview, data is at ../data/) or from a GH Pages
+  // deploy where index.html sits next to data/ at the site root.
+  const candidates = [
+    "../data/digest_enriched.json",
+    "../data/digest_latest.json",
+    "data/digest_enriched.json",
+    "data/digest_latest.json",
+  ];
+  for (const path of candidates) {
+    try {
+      const r = await fetch(path + "?t=" + Date.now());
+      if (r.ok) { DIGEST = await r.json(); break; }
+    } catch (e) { /* try next */ }
+  }
+  if (!DIGEST) return;
+
+  document.getElementById("dateline-date").textContent =
+    new Date(DIGEST.generated_at).toLocaleString("en-US", {
+      weekday: "short", year: "numeric", month: "short", day: "numeric"
+    }).toUpperCase();
+  document.getElementById("dateline-stats").textContent =
+    `${DIGEST.total_items} ITEMS · ${Object.keys(DIGEST.categories || {}).length} CATEGORIES`;
+
+  // Restore saved sort preference (falls back silently if storage is denied
+  // by the browser, e.g. some privacy modes or file:// contexts).
+  try {
+    const saved = localStorage.getItem("infogather.sort");
+    if (saved && ["relevance", "newest", "oldest"].includes(saved)) {
+      currentSort = saved;
+    }
+  } catch (e) { /* ignore */ }
+
+  // Wire toggle buttons
+  document.querySelectorAll("#sort-toggle button").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.sort === currentSort);
+    btn.addEventListener("click", () => {
+      currentSort = btn.dataset.sort;
+      try { localStorage.setItem("infogather.sort", currentSort); } catch (e) {}
+      document.querySelectorAll("#sort-toggle button").forEach(b =>
+        b.classList.toggle("active", b.dataset.sort === currentSort));
+      renderStories();
+    });
+  });
+
+  renderCategories();
+  renderStories();
+}
+
+function renderCategories() {
+  const el = document.getElementById("categories");
+  const cats = DIGEST.categories || {};
+  const total = DIGEST.total_items || 0;
+  const entries = [["all", total], ...Object.entries(cats).map(([k, v]) => [k, v.length])];
+  entries.sort((a, b) => b[1] - a[1]);
+
+  el.innerHTML = entries.map(([cat, count]) => `
+    <div class="cat-link ${cat === currentCategory ? 'active' : ''}" data-cat="${cat}">
+      <span>${prettyCat(cat)}</span>
+      <span class="count">${count}</span>
+    </div>
+  `).join("");
+
+  el.querySelectorAll(".cat-link").forEach(node => {
+    node.addEventListener("click", () => {
+      currentCategory = node.dataset.cat;
+      showAll = false;   // reset to top-30 view when switching categories
+      renderCategories();
+      renderStories();
+    });
+  });
+}
+
+function prettyCat(c) {
+  return { all: "All Items", legal: "Legal & Reg",
+           ai_political: "AI / Generative",
+           funding: "Funding & M&A",
+           vendors: "Vendor Watch",
+           campaign_tech: "Campaign Tech",
+           misc: "Miscellaneous" }[c] || c.replace(/_/g, " ");
+}
+
+function renderStories() {
+  const el = document.getElementById("stories");
+  if (!DIGEST) return;
+
+  let items;
+  if (currentCategory === "all") {
+    // "All Items" = union of every category. We can't use DIGEST.top_items
+    // because the collector caps it at 20 for "highlights" purposes. The
+    // full set lives in DIGEST.categories — flatten + dedupe by id.
+    const seenIds = new Set();
+    items = [];
+    for (const catItems of Object.values(DIGEST.categories || {})) {
+      for (const it of catItems) {
+        if (seenIds.has(it.id)) continue;
+        seenIds.add(it.id);
+        items.push(it);
+      }
+    }
+    // Default sort: descending by score (highest-relevance first), then
+    // by date. The sortItems() call below will override this if the user
+    // picked Newest/Oldest.
+    items.sort((a, b) => (b.score || 0) - (a.score || 0)
+                          || (new Date(b.published) - new Date(a.published)));
+  } else {
+    items = DIGEST.categories[currentCategory] || [];
+  }
+
+  items = sortItems(items, currentSort);
+
+  if (!items.length) {
+    el.innerHTML = `<div class="placeholder">No items in this section today.</div>`;
+    return;
+  }
+
+  // Hard cap at INITIAL_RENDER_LIMIT items, UNLESS the user clicked "Show all".
+  const totalCount = items.length;
+  if (!showAll && items.length > INITIAL_RENDER_LIMIT) {
+    items = items.slice(0, INITIAL_RENDER_LIMIT);
+  }
+
+  const storyHtml = items.map(it => {
+    const stampClass = PALETTES[it.category] || "";
+    const analysis = it.analysis || null;
+    // Show year only when it's not the current year — keeps the common case
+    // compact while making cross-year dates explicit.
+    const pubDate = new Date(it.published);
+    const dateOpts = (pubDate.getFullYear() === new Date().getFullYear())
+      ? { month: "short", day: "numeric" }
+      : { month: "short", day: "numeric", year: "numeric" };
+    const date = pubDate.toLocaleDateString("en-US", dateOpts);
+    // Decode entities first (turns &nbsp; into space, &#8217; into '), then
+    // escape for safe HTML insertion. Without the decode step, summaries
+    // show literal '&nbsp;' text.
+    const cleanTitle = escapeHtml(decodeEntities(it.title));
+    const cleanSummary = escapeHtml(decodeEntities(it.summary || ""));
+
+    return `
+      <article class="story">
+        <span class="score-stamp ${stampClass}">${it.score} · ${prettyCat(it.category)}</span>
+        <div class="meta">
+          <span class="source">${escapeHtml(it.source)}</span> · ${date}
+        </div>
+        <h2><a href="${it.url}" target="_blank" rel="noopener">${cleanTitle}</a></h2>
+        ${cleanSummary ? `<p class="summary">${cleanSummary.slice(0, 280)}${cleanSummary.length > 280 ? "…" : ""}</p>` : ""}
+
+        ${analysis ? `
+          <div class="analysis">
+            <div class="label">TL;DR</div>
+            <div>${escapeHtml(analysis.tldr || "")}</div>
+            ${analysis.so_what ? `
+              <div class="label" style="margin-top:0.5rem;">So What</div>
+              <div>${escapeHtml(analysis.so_what)}</div>` : ""}
+          </div>
+        ` : ""}
+
+        <div class="chips">
+          ${(it.entities || []).map(e => `<span class="chip entity">${escapeHtml(e)}</span>`).join("")}
+          ${(it.tags || []).map(t => `<span class="chip tag">#${escapeHtml(t)}</span>`).join("")}
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  // Two-state toggle footer:
+  //   - When truncated (showAll=false, totalCount>30): button to expand
+  //   - When expanded (showAll=true, totalCount>30): button to collapse
+  //   - Otherwise (small category): no footer
+  let footerHtml = "";
+  if (totalCount > INITIAL_RENDER_LIMIT) {
+    if (!showAll) {
+      const hidden = totalCount - INITIAL_RENDER_LIMIT;
+      footerHtml = `
+        <div class="result-footer">
+          Showing top ${INITIAL_RENDER_LIMIT} of ${totalCount} items, sorted by ${currentSort}.<br>
+          <button class="show-toggle" id="show-toggle-btn">Show all ${totalCount} items</button>
+        </div>
+      `;
+    } else {
+      footerHtml = `
+        <div class="result-footer">
+          Showing all ${totalCount} items, sorted by ${currentSort}.<br>
+          <button class="show-toggle" id="show-toggle-btn">Collapse to top ${INITIAL_RENDER_LIMIT}</button>
+        </div>
+      `;
+    }
+  }
+
+  el.innerHTML = storyHtml + footerHtml;
+
+  // Wire the toggle button (only exists in two of the three render states)
+  const toggleBtn = document.getElementById("show-toggle-btn");
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      const wasExpanded = showAll;
+      showAll = !showAll;
+      renderStories();
+      // If collapsing, scroll back to top of stories so the collapse feels intentional
+      if (wasExpanded) {
+        document.getElementById("stories").scrollIntoView({
+          behavior: "smooth", block: "start"
+        });
+      }
+    });
+  }
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g,
+    c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+load();
+</script>
+
+</body>
+</html>
