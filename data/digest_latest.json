@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-27T20:28:31.685346+00:00",
-  "total_items": 36,
+  "generated_at": "2026-05-28T14:10:07.185444+00:00",
+  "total_items": 40,
   "categories": {
     "ai_political": [
       {
@@ -85,6 +85,41 @@
           "search_discovered"
         ],
         "fetched_at": "2026-05-27T20:13:35.050323+00:00"
+      },
+      {
+        "id": "dc572209204b",
+        "title": "AI-native pharma marketing startup Solstice raises $21M to cut drug campaign timelines from 3 months to 10 days",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNVjk5eGNOenBOVzB1aHg1azhldlRKV3h5SmsxN2hRY09nUEJIM0VmbG1zYU9sOU42VXJHWnEtWGtIaVFfd2hhS2lBNEVQeU5UYWVLSkV4c2xPdTlKdWxOZEVBb3VRWUhGYVFCVGY2eF9WWG1CSFFvajBISThkZFFYZnhTWlV5X09NbVFSaEhVSE9vNk9oeGE4Sk9MOVAyODBDZEt2YkNsNU1NZzlnbWoxalhDSXFHVUZVbmJiYmtUSjdlc0lHT1FVTTdWdTF3X0J4aHY4Vlh3?oc=5",
+        "source": "Google News: Tech Funding News",
+        "published": "2026-05-28T12:17:31+00:00",
+        "summary": "AI-native pharma marketing startup Solstice raises $21M to cut drug campaign timelines from 3 months to 10 days&nbsp;&nbsp;Tech Funding News",
+        "category": "ai_political",
+        "entities": [],
+        "score": 5,
+        "tags": [
+          "ai",
+          "funding",
+          "query:funding",
+          "search_discovered"
+        ],
+        "fetched_at": "2026-05-28T14:10:03.658444+00:00"
+      },
+      {
+        "id": "9b3b1f2a2a81",
+        "title": "Republicans release AI deepfake of James Talarico as phony videos proliferate in midterm races",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPLXV6NzhTRmlmWGtPam1QM0dUVlRIOGZETllYMktjTHNSdUpOVFgzdDRvSHdzZURaanFfX0IxY1pxcnVaZktsbTUyZWd0S1FWQlVlTWZ1VmY3eGd5THUzdERfbWVVMjc5WlptcndqajdheGgtdmV3M3BZRVVnQUtGeEtmdlpwa0NqZGdkb3IxNkU?oc=5",
+        "source": "Google News: CNN",
+        "published": "2026-03-13T07:00:00+00:00",
+        "summary": "Republicans release AI deepfake of James Talarico as phony videos proliferate in midterm races&nbsp;&nbsp;CNN",
+        "category": "ai_political",
+        "entities": [],
+        "score": 2,
+        "tags": [
+          "ai",
+          "query:ai_political",
+          "search_discovered"
+        ],
+        "fetched_at": "2026-05-28T14:09:50.729907+00:00"
       }
     ],
     "vendors": [
@@ -103,22 +138,6 @@
         "score": 16,
         "tags": [],
         "fetched_at": "2026-05-26T14:59:59.931818+00:00"
-      },
-      {
-        "id": "415599f98939",
-        "title": "NGP VAN Launches New Mobilize Features to Power the Next Era of Volunteer-Led Organizing",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWU9tN0k5NVVObGk1TUVqN3FNQTVkZDNkb1RQclNjeUtjNENhNTZXaEZpbi1tQjh0VjdORVNXelhNY19WeGoxR2JMUFdRRlUxOVl5X3BKSGROaWVXLTE5SlBTS0NicV9IVm1VbzkyWGJjc3hGYThSbDNqVFlDelE2T2lFMFZaNnpBZC15SGRscEtFWVV0cFNKQUxaWm5fQTJNeWJsME5GczJmYlJyQkl6SXlPYjE5aldId3N2Uy15ai1yTUNXaEtWaWgyV3RydlJBUWNQNHYzUTRSbi1Q?oc=5",
-        "source": "Google News: PR Newswire",
-        "published": "2026-05-19T14:15:00+00:00",
-        "summary": "NGP VAN Launches New Mobilize Features to Power the Next Era of Volunteer-Led Organizing&nbsp;&nbsp;PR Newswire",
-        "category": "vendors",
-        "entities": [
-          "Mobilize",
-          "NGP VAN / Bonterra"
-        ],
-        "score": 16,
-        "tags": [],
-        "fetched_at": "2026-05-20T15:03:28.592279+00:00"
       },
       {
         "id": "44b980da107e",
@@ -151,21 +170,6 @@
         "score": 10,
         "tags": [],
         "fetched_at": "2026-05-25T23:49:13.966719+00:00"
-      },
-      {
-        "id": "cf6aee6b899b",
-        "title": "ActBlue sues Ken Paxton for \u2018retaliation\u2019 over donation vetting lawsuit",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYTdtNXBfd1BVYnNCdEl6dUczY21JTnhfVnRqNWN5ekl3RHNudUhnQXlSTDhKMVhQcU5RWkxHQ0lJRmdOQkFsYkk1ekc2YTVpMkVsM2c3QXo4bGN1cGduUWN4UlRnc1ozM1NBX0ZobC05SDV5cENGM2F3MlhCNWxTN3h3aThCZ9IBiwFBVV95cUxQZlhXR3ZSUlJyV3hfS0Fkb1RuRFpYdHpmMG8yMkUwb2FzVi1lZVV0akxhNTZad1Y2Vi1ySHE4c1hUbF9SQzhraGdoZTVLVUVIQ1luRU1pYjhCam03dkRVbF9QSkpHMnl3djItdy02dHFkVWxfOGlXaU5SVE5lX2p1VTljUmtJQ0U1aGdJ?oc=5",
-        "source": "Google News: The Hill",
-        "published": "2026-05-01T07:00:00+00:00",
-        "summary": "ActBlue sues Ken Paxton for \u2018retaliation\u2019 over donation vetting lawsuit&nbsp;&nbsp;The Hill",
-        "category": "vendors",
-        "entities": [
-          "ActBlue"
-        ],
-        "score": 10,
-        "tags": [],
-        "fetched_at": "2026-05-20T15:03:38.176422+00:00"
       },
       {
         "id": "3f5de1130299",
@@ -339,6 +343,21 @@
         "fetched_at": "2026-05-25T23:48:57.466231+00:00"
       },
       {
+        "id": "c9c715a8a487",
+        "title": "\u201cNewsom signs bill blocking ballot seizures ahead of California primary\u201d",
+        "url": "https://electionlawblog.org/?p=156423",
+        "source": "Election Law Blog",
+        "published": "2026-05-27T21:36:44+00:00",
+        "summary": "San Francisco Chronicle:\nRiverside County Sheriff Chad Bianco\u2019s unprecedented seizure of 650,000 local voters\u2019 ballots earlier this year just inspired a new law to stop him from doing it again.\nGov. Gavin Newsom signed the Bianco-inspired legislation on Wednesday,&#8230; Continue reading \nThe post &#8220;Newsom signs bill blocking ballot seizures ahead of California primary&#8221; appeared first on Election Law Blog.",
+        "category": "misc",
+        "entities": [],
+        "score": 10,
+        "tags": [
+          "political"
+        ],
+        "fetched_at": "2026-05-28T14:09:38.372570+00:00"
+      },
+      {
         "id": "f12cb4693c79",
         "title": "\u201cRedistricting effort in SC Senate dies as 12 Republicans cross line on first day of early voting\u201d",
         "url": "https://electionlawblog.org/?p=156386",
@@ -429,6 +448,21 @@
         "fetched_at": "2026-05-27T19:48:46.341569+00:00"
       },
       {
+        "id": "25dcf6b6d7da",
+        "title": "\u201cCorporations Can Vote in Some Delaware Elections, Judge Says\u201d",
+        "url": "https://electionlawblog.org/?p=156421",
+        "source": "Election Law Blog",
+        "published": "2026-05-27T21:35:33+00:00",
+        "summary": "Bloomberg:\nCorporations, partnerships, trusts, limited liability companies, and other \u201cartificial entities\u201d have the right to vote in Delaware elections under some circumstances, a judge said in a novel ruling Tuesday.\nJudge Craig A. Karsnitz rejected an ACLU challenge to&#8230; Continue reading \nThe post &#8220;Corporations Can Vote in Some Delaware Elections, Judge Says&#8221; appeared first on Election Law Blog.",
+        "category": "misc",
+        "entities": [],
+        "score": 4,
+        "tags": [
+          "political"
+        ],
+        "fetched_at": "2026-05-28T14:09:38.372570+00:00"
+      },
+      {
         "id": "be64d565df36",
         "title": "Trump Finally Nominated New FEC Commissioners. But Their Confirmations Could Languish. - News of the United States",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNQ3FIODVQcmtNeDA0OU9kb0RKVXRoQ3dEVzgxMVp5NEF0QmFZODVTT01WZnQ1ZE9JWS1oUzd2YUppRFFlZUlOWko5My1KWDR6NHp2VUNSdElud04taVlSVG94MFZsLXRxTHRaaTQzUVJwNDB3VGIzZXIwRTFXa0F4Z2tZSFo4dw?oc=5",
@@ -455,6 +489,70 @@
           "political"
         ],
         "fetched_at": "2026-05-25T23:48:58.228894+00:00"
+      },
+      {
+        "id": "d478a6b264c4",
+        "title": "Federal Election Commission Poised to Regain Quorum",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOU3BYYUJpTmRNbFplcnJmSmxqcFFjVV9zeGJBUGZFcDlPcnlOVjBTc2VUTm9GLTdybk5NYTA4dzE4R2dBMGZZSEo1b0JOQ0tEbFEtRzhTeFJsNGc1T1JjMDJfV1pNV0xSckpKM3QyOVE3TTBxaEEtWFVNa1dVM2JaVXl5bXkyc0s4YkphQlBGX0VNdw?oc=5",
+        "source": "Google News: Perkins Coie",
+        "published": "2026-02-12T08:00:00+00:00",
+        "summary": "Federal Election Commission Poised to Regain Quorum&nbsp;&nbsp;Perkins Coie",
+        "category": "misc",
+        "entities": [],
+        "score": 2,
+        "tags": [
+          "political",
+          "query:legal",
+          "search_discovered"
+        ],
+        "fetched_at": "2026-05-27T20:42:11.185594+00:00"
+      },
+      {
+        "id": "b0e0de60aaa1",
+        "title": "District court denies injunction against Trump election USPS executive order",
+        "url": "https://electionlawblog.org/?p=156427",
+        "source": "Election Law Blog",
+        "published": "2026-05-28T09:29:59+00:00",
+        "summary": "The decision in DSCC v. Trump (D.D.C.) is here. Judge Nichols first finds no standing for any parties, including distinguishing Bost from Clapper and emphasizes that, at this stage, any injury is too speculative. (At least at this stage.)&#8230; Continue reading \nThe post District court denies injunction against Trump election USPS executive order appeared first on Election Law Blog.",
+        "category": "misc",
+        "entities": [],
+        "score": 2,
+        "tags": [
+          "political"
+        ],
+        "fetched_at": "2026-05-28T14:09:38.372570+00:00"
+      },
+      {
+        "id": "3684c9f5b24a",
+        "title": "The ADA Title II Trojan Horse: How South Bend Digitized 183 Government Forms",
+        "url": "https://medium.com/innovation-in-south-bend/the-ada-title-ii-trojan-horse-how-south-bend-digitized-183-government-forms-444047148277?source=rss------civic_tech-5",
+        "source": "Medium: #civic-tech",
+        "published": "2026-05-28T13:56:37+00:00",
+        "summary": "TL;DRContinue reading on Innovation in South Bend \u00bb",
+        "category": "misc",
+        "entities": [],
+        "score": 2,
+        "tags": [
+          "medium",
+          "political",
+          "tag:civic-tech"
+        ],
+        "fetched_at": "2026-05-28T14:10:06.817305+00:00"
+      },
+      {
+        "id": "4324eb567a81",
+        "title": "\u201cAn Open Society Needs an Open Education System,\u201d at NYU Democracy Project",
+        "url": "https://electionlawblog.org/?p=156432",
+        "source": "Election Law Blog",
+        "published": "2026-05-28T14:03:37+00:00",
+        "summary": "Concerns about the state of democracy today often highlight the importance of the educational system as both a major site today of cultural conflicts and yet essential in educating and preparing citizens to participate in democratic political culture.  This essay&#8230; Continue reading \nThe post &#8220;An Open Society Needs an Open Education System,&#8221; at NYU Democracy Project appeared first on Election Law Blog.",
+        "category": "misc",
+        "entities": [],
+        "score": 2,
+        "tags": [
+          "political"
+        ],
+        "fetched_at": "2026-05-28T14:09:38.372570+00:00"
       },
       {
         "id": "e06075572f73",
@@ -486,38 +584,6 @@
           "political"
         ],
         "fetched_at": "2026-05-27T18:28:48.200961+00:00"
-      },
-      {
-        "id": "de8724941f83",
-        "title": "GOP-Backed Justices Prevail in Georgia in Unusually Spirited Supreme Court Elections",
-        "url": "https://boltsmag.org/georgia-supreme-court-election-results-2026/",
-        "source": "Bolts Magazine",
-        "published": "2026-05-20T04:16:21+00:00",
-        "summary": "No sitting justice has lost reelection here in over a century, but two liberal attorneys aimed for an upset while stressing the importance of state courts for voting and abortion rights.\nThe post GOP-Backed Justices Prevail in Georgia in Unusually Spirited Supreme Court Elections appeared first on Bolts.",
-        "category": "legal",
-        "entities": [],
-        "score": 8,
-        "tags": [
-          "legal",
-          "political"
-        ],
-        "fetched_at": "2026-05-20T15:03:11.546945+00:00"
-      },
-      {
-        "id": "f397130e1a02",
-        "title": "\u201cGOP-Backed Justices Prevail in Georgia in Unusually Spirited Supreme Court Elections\u201d",
-        "url": "https://electionlawblog.org/?p=156265",
-        "source": "Election Law Blog",
-        "published": "2026-05-20T04:52:06+00:00",
-        "summary": "Bolts reports.\nThe post \u201cGOP-Backed Justices Prevail in Georgia in Unusually Spirited Supreme Court Elections\u201d appeared first on Election Law Blog.",
-        "category": "legal",
-        "entities": [],
-        "score": 7,
-        "tags": [
-          "legal",
-          "political"
-        ],
-        "fetched_at": "2026-05-20T15:03:11.718817+00:00"
       },
       {
         "id": "86205c1646f1",
@@ -600,22 +666,6 @@
       "score": 16,
       "tags": [],
       "fetched_at": "2026-05-26T14:59:59.931818+00:00"
-    },
-    {
-      "id": "415599f98939",
-      "title": "NGP VAN Launches New Mobilize Features to Power the Next Era of Volunteer-Led Organizing",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWU9tN0k5NVVObGk1TUVqN3FNQTVkZDNkb1RQclNjeUtjNENhNTZXaEZpbi1tQjh0VjdORVNXelhNY19WeGoxR2JMUFdRRlUxOVl5X3BKSGROaWVXLTE5SlBTS0NicV9IVm1VbzkyWGJjc3hGYThSbDNqVFlDelE2T2lFMFZaNnpBZC15SGRscEtFWVV0cFNKQUxaWm5fQTJNeWJsME5GczJmYlJyQkl6SXlPYjE5aldId3N2Uy15ai1yTUNXaEtWaWgyV3RydlJBUWNQNHYzUTRSbi1Q?oc=5",
-      "source": "Google News: PR Newswire",
-      "published": "2026-05-19T14:15:00+00:00",
-      "summary": "NGP VAN Launches New Mobilize Features to Power the Next Era of Volunteer-Led Organizing&nbsp;&nbsp;PR Newswire",
-      "category": "vendors",
-      "entities": [
-        "Mobilize",
-        "NGP VAN / Bonterra"
-      ],
-      "score": 16,
-      "tags": [],
-      "fetched_at": "2026-05-20T15:03:28.592279+00:00"
     },
     {
       "id": "ceff6ea12b5d",
@@ -729,21 +779,6 @@
       "fetched_at": "2026-05-25T23:49:13.966719+00:00"
     },
     {
-      "id": "cf6aee6b899b",
-      "title": "ActBlue sues Ken Paxton for \u2018retaliation\u2019 over donation vetting lawsuit",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYTdtNXBfd1BVYnNCdEl6dUczY21JTnhfVnRqNWN5ekl3RHNudUhnQXlSTDhKMVhQcU5RWkxHQ0lJRmdOQkFsYkk1ekc2YTVpMkVsM2c3QXo4bGN1cGduUWN4UlRnc1ozM1NBX0ZobC05SDV5cENGM2F3MlhCNWxTN3h3aThCZ9IBiwFBVV95cUxQZlhXR3ZSUlJyV3hfS0Fkb1RuRFpYdHpmMG8yMkUwb2FzVi1lZVV0akxhNTZad1Y2Vi1ySHE4c1hUbF9SQzhraGdoZTVLVUVIQ1luRU1pYjhCam03dkRVbF9QSkpHMnl3djItdy02dHFkVWxfOGlXaU5SVE5lX2p1VTljUmtJQ0U1aGdJ?oc=5",
-      "source": "Google News: The Hill",
-      "published": "2026-05-01T07:00:00+00:00",
-      "summary": "ActBlue sues Ken Paxton for \u2018retaliation\u2019 over donation vetting lawsuit&nbsp;&nbsp;The Hill",
-      "category": "vendors",
-      "entities": [
-        "ActBlue"
-      ],
-      "score": 10,
-      "tags": [],
-      "fetched_at": "2026-05-20T15:03:38.176422+00:00"
-    },
-    {
       "id": "3f5de1130299",
       "title": "Reporter talks controversy surrounding ActBlue, WinRed recurring donations",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcHdLanhNbGNVbTFfd2NlZ1gzdFBLLXdDUnNuMHJ5dWpwbGxJOW5vQnpWMkNxZENQRG54STgxMWdITmE3OXBEdnI1Nk1RbTgxcUlpc1lQYldsZ2QwRFRFckI1R3A0bjl3NmJjN1JtSWs4SmdqbTZIOFNlQkhIUG1YZG5JRnp6Ulg2X2RqcnlzZTVmT1BRSEVxdm5XOExrbExHZmdTaVZrMllvSmJNQ0R1YVVUNGhWa2VZMWZXNFln?oc=5",
@@ -805,6 +840,21 @@
       "fetched_at": "2026-05-27T18:28:48.200961+00:00"
     },
     {
+      "id": "c9c715a8a487",
+      "title": "\u201cNewsom signs bill blocking ballot seizures ahead of California primary\u201d",
+      "url": "https://electionlawblog.org/?p=156423",
+      "source": "Election Law Blog",
+      "published": "2026-05-27T21:36:44+00:00",
+      "summary": "San Francisco Chronicle:\nRiverside County Sheriff Chad Bianco\u2019s unprecedented seizure of 650,000 local voters\u2019 ballots earlier this year just inspired a new law to stop him from doing it again.\nGov. Gavin Newsom signed the Bianco-inspired legislation on Wednesday,&#8230; Continue reading \nThe post &#8220;Newsom signs bill blocking ballot seizures ahead of California primary&#8221; appeared first on Election Law Blog.",
+      "category": "misc",
+      "entities": [],
+      "score": 10,
+      "tags": [
+        "political"
+      ],
+      "fetched_at": "2026-05-28T14:09:38.372570+00:00"
+    },
+    {
       "id": "744ced9a9176",
       "title": "Deval Patrick joins Higher Ground Labs",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQUlvTUZHWXRTY0J1WDZaN2pJdEJSM1dXUGh0blY3OGVHXzYwRDFiV2I3NUstcU1SZ2k4OFRmNWtZZXEwenY4aHFhSWppcDlwalJ2QzJoM2owZm9UVG4yRDFlYW9OSUJvMVdhM2RKRzFDWllBZjgtX01jR2dmNXRWOUdvUHZkdWxpNEdwR1dYdENQb3Nma1A0VFlFVnFFSER4UEVyWQ?oc=5",
@@ -818,22 +868,6 @@
       "score": 9,
       "tags": [],
       "fetched_at": "2026-05-25T23:49:20.928554+00:00"
-    },
-    {
-      "id": "de8724941f83",
-      "title": "GOP-Backed Justices Prevail in Georgia in Unusually Spirited Supreme Court Elections",
-      "url": "https://boltsmag.org/georgia-supreme-court-election-results-2026/",
-      "source": "Bolts Magazine",
-      "published": "2026-05-20T04:16:21+00:00",
-      "summary": "No sitting justice has lost reelection here in over a century, but two liberal attorneys aimed for an upset while stressing the importance of state courts for voting and abortion rights.\nThe post GOP-Backed Justices Prevail in Georgia in Unusually Spirited Supreme Court Elections appeared first on Bolts.",
-      "category": "legal",
-      "entities": [],
-      "score": 8,
-      "tags": [
-        "legal",
-        "political"
-      ],
-      "fetched_at": "2026-05-20T15:03:11.546945+00:00"
     },
     {
       "id": "f12cb4693c79",
@@ -879,6 +913,39 @@
       "score": 7,
       "tags": [],
       "fetched_at": "2026-05-27T18:29:02.440848+00:00"
+    },
+    {
+      "id": "55a42d741d62",
+      "title": "PKR launches Teras, its AI data-driven election system",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeWVTVEVqVjBkVXhRN0k0bkdHcUtYUjZCSDltZmM0X2dDT1JCWG1JXzFOTXhQLTczX0k4cDBuVDdLczlOdjM1TndfUnUzby1aRW8zVkhOcERYMmNPSkE4b3hHSHNUWm9VV1dnYXZVaDVpNnNfYnVpZHhlS1hMTzBrb2REWlRWa3NHQnQ0ZU1WU25zcy1lV3MzcEpTbDBlYjBxOURPNWZ3?oc=5",
+      "source": "Google News: thestar.com.my",
+      "published": "2026-05-02T07:00:00+00:00",
+      "summary": "PKR launches Teras, its AI data-driven election system&nbsp;&nbsp;thestar.com.my",
+      "category": "ai_political",
+      "entities": [],
+      "score": 7,
+      "tags": [
+        "ai",
+        "political",
+        "query:ai_political",
+        "search_discovered"
+      ],
+      "fetched_at": "2026-05-27T20:13:35.050323+00:00"
+    },
+    {
+      "id": "b791ef6c8ea3",
+      "title": "Three Strategic Insights from the DNC\u2019s 2024 Autopsy Report",
+      "url": "https://campaignsandelections.com/industry-news/five-strategic-insights-from-the-dncs-2024-autopsy-report/",
+      "source": "Campaigns & Elections",
+      "published": "2026-05-21T17:10:21+00:00",
+      "summary": "The Democratic National Committee on Thursday released a draft of a sweeping postmortem of the 2024 election and the shortcomings that led to a string of Democratic defeats, including former [&#8230;]\nThe post Three Strategic Insights from the DNC\u2019s 2024 Autopsy Report appeared first on Campaigns &amp; Elections.",
+      "category": "misc",
+      "entities": [],
+      "score": 7,
+      "tags": [
+        "political"
+      ],
+      "fetched_at": "2026-05-25T23:48:57.466231+00:00"
     }
   ]
 }
